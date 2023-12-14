@@ -1,0 +1,26 @@
+@import "../abstracts/variables";
+.title-one {
+  background: linear-gradient(253deg, #FFEE32 -13.48%, #D6D6D6 125.48%);
+  padding: 329px 28px 149px 21px;
+}
+
+.title-one__title {
+  font-size: 48px;
+  color: $primary-color;
+  max-width: 326px;
+
+  @media (min-width: $bp-md) {
+    max-width: 521px;
+    font-size: 80px;
+  }
+
+  @media (min-width: $bp-lg) {
+    max-width: 846px;
+  }
+}
+.title-one__container {
+  @media (min-width: $bp-lg) {
+    max-width: 1059px;
+    margin: 0 auto;
+  }
+}

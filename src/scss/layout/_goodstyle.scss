@@ -1,0 +1,43 @@
+@import "../abstracts/variables";
+@import url('https://fonts.googleapis.com/css?family=DynaPuff');
+
+
+
+.good {
+  background-image: url("../../img/Rectangle 8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: lightgrey;
+  height: 800px;
+
+  @media (min-width: $bp-md) {
+    background-image: url("../../img/Rectangle 8.png");
+    min-height: 400px;
+
+  }
+
+  @media (min-width: $bp-lg) {
+    .good__container {
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.good__title {
+  color: $primary-color;
+  text-align: center;
+  padding: 180px 16px 173px;
+  font-family: 'DynaPuff', sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+
+  @media (min-width: $bp-md) {
+    padding: 274px 31px 294px 32px;
+    font-size: 48px;
+  }
+}

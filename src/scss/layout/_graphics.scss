@@ -1,0 +1,87 @@
+@import "../abstracts/variables";
+@import url('https://fonts.googleapis.com/css?family=DynaPuff');
+
+.graphics {
+  background: $secondary-color;
+  padding: 58px 16px 93px; /* Adjust padding values */
+
+  @media (min-width: $bp-md) {
+    padding: 82px 32px 129px;
+  }
+
+  @media (min-width: $bp-lg) {
+    .graphics__container {
+      max-width: 1050px;
+      margin: 0 auto;
+    }
+  }
+
+  .graphics__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Adjust gap as needed */
+  }
+
+  .graphics__img-style
+  {
+    width: 100%;
+    border-radius: 40px;
+    margin-bottom: 20px;
+    position: relative;
+
+    @media (min-width: $bp-md) {
+      min-width: 336px;
+      margin-bottom: 26px;
+      height: 414px;
+    }
+
+    @media (min-width: $bp-lg) {
+      min-width: 514px;
+    }
+
+    &::after {
+      content: "";
+      background: url("../../img/SoftStar.png");
+      position: absolute;
+      display: inline-block;
+      width: 172px;
+      height: 172px;
+      top: 72px;
+      left: 90px;
+      z-index: 1000;
+      background-size: cover;
+    }
+
+
+
+  }
+
+
+  .graphics__title {
+  color: $primary-color;
+  font-size: 32px;
+  margin-bottom: 28px;
+
+  @media (min-width: $bp-md) {
+    font-size: 80px;
+    margin-bottom: 38px;
+  }
+}
+
+.graphics__img-line,
+.graphics__img-elements {
+  width: 100%;
+  min-width: 334px;
+
+  @media (min-width: $bp-md) {
+    max-width: 336px;
+  }
+
+  @media (min-width: $bp-lg) {
+    max-width: 514px;
+  }
+}}
+
+
+
+

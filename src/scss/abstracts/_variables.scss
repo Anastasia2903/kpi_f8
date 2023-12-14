@@ -1,0 +1,17 @@
+$bp-md: 768px;
+$bp-lg: 1200px;
+
+$primary-color: #FFF;
+$secondary-color: #202020;
+
+@mixin flex($direction: row, $justify-content: space-between) {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex-gap($direction: row, $gap: 20px) {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+

@@ -1,0 +1,116 @@
+@import "../abstracts/variables";
+@import url('https://fonts.cdnfonts.com/css/manrope-3');
+@import url('https://fonts.googleapis.com/css?family=DynaPuff');
+
+.footer {
+  height: 342px;
+  background-color: $secondary-color;
+  position: relative;
+  padding-top: 53px;
+  @media screen and (min-width: 768px) {
+    height: 408px;
+  }
+}
+
+.footer__img {
+  width: 100%;
+  max-width: 336px; /* Default max-width for mobile */
+
+  @media (min-width: $bp-md) {
+    display: none; /* Hide on medium-sized screens */
+  }
+
+  @media (min-width: $bp-lg) {
+    max-width: 514px; /* Adjust max-width for larger screens */
+  }
+}
+
+.footer__project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 139px;
+  border: 1px solid #F2F2F2;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  width: 342px;
+  height: 72px;
+  position: relative;
+  top: 53px;
+  margin: 0 auto;
+  text-decoration: none;
+  @media screen and (min-width: 768px) {
+    width: 714px;
+    height: 150px;
+  }
+}
+
+.footer__title {
+  color: $primary-color;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+}
+
+.footer__text {
+  color: $primary-color;
+  text-align: left;
+  font-family: 'Manrope', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+
+  &::before {
+    content: "";
+    background: url('../../img/Group 2.png');
+    width: 32px;
+    height: 16px;
+    position: absolute;
+    background-position: center;
+    top: 20%;
+    right: 0;
+    margin-right: 55px;
+    background-size: cover;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+
+    &::before {
+      margin-top: 3px;
+      margin-right: 270px;
+    }
+
+  }
+}
+
+
+.footer__network {
+  padding-top: 113px;
+  padding-bottom: 21px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 34px;
+}
+
+.footer__copyright {
+  color: $primary-color;
+  text-align: center;
+  font-family: 'Manrope', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+
+

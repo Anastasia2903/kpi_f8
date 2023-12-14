@@ -1,0 +1,77 @@
+@import "../abstracts/variables";
+@import url('https://fonts.cdnfonts.com/css/manrope-3');
+.header {
+  background: linear-gradient(253deg, #FFEE32 -13.48%, #D6D6D6 125.48%);
+  width: 100%;
+  padding: 27px 16px 0 17px;
+  position: fixed; /* Fix the header position */
+  top: 0; /* Stick it to the top */
+  z-index: 1000;
+
+
+  @media (min-width: $bp-md) {
+    padding: 38px 31px 0 34px;
+  }
+
+  @media (min-width: $bp-lg) {
+    padding-top: 38px;
+  }
+}
+
+.header__img {
+  padding-bottom: 20px;
+  @media (min-width: $bp-lg) {
+    display: none;
+  }
+}
+
+.header__wrapper {
+  @include flex();
+
+  @media (min-width: $bp-md) {
+  }
+
+  @media (min-width: $bp-lg) {
+    align-items: center;
+  }
+}
+@media (min-width: $bp-lg) {
+  .container {
+    max-width: 1059px;
+    margin: 0 auto;
+  }
+}
+
+.nav {
+  display: none;
+  @media (min-width: $bp-lg) {
+    display: block;
+    width: fit-content;
+  }
+}
+
+.nav__list {
+  @include flex-gap;
+  width: fit-content;
+
+  li {
+    border-radius: 20px;
+    border: 1px solid #FFF;
+    padding: 10px 16px;
+  }
+
+  a {
+    color: $primary-color;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+  }
+}
+
+.nav__list-img {
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+}
+
+
